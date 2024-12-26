@@ -29,8 +29,8 @@ public class ManageUserTestClass  extends BaseClass {
 		hp.clickUserManagementBtnInHomePage();
 		mup = hp.clickOnUsersOptionUnderUserMngmt();
 		String actualRes = mup.getTextOfManageUsersHeading();
-		//Assert.assertTrue(actualRes.contains(ExcelReadClass.getStringdata(10, 0)));
-		Assert.assertTrue(actualRes.contains("User1"));
+		Assert.assertTrue(actualRes.contains(ExcelReadClass.getStringdata(10, 0)));
+		//Assert.assertTrue(actualRes.contains("User1"));
 	}
 
 	@Test(priority = 1, retryAnalyzer = RetryAnalyzerClass.class, groups = {"Group1"})
