@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="edge"/>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <classes>
+      <class name="testClasses.LoginPageTestClass">
+        <methods>
+          <include name="verifySuccessfullLogin"/>
+          <include name="verifyResetPasswordPageComingWhileChickingOnForgotYourPassword"/>
+          <include name="verifyUnsuccessfulLoginOfTheSite"/>
+          <include name="verifyTheExactURL_OpensWhileHittingTheBaseURL"/>
+          <include name="afterMethod"/>
+          <include name="verifyTheRememberMeCheckboxIsSelectedByDefault"/>
+          <include name="createReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testClasses.LoginPageTestClass -->
+      <class name="testClasses.ManageProductTestClass">
+        <methods>
+          <include name="verifyToCreateA_newProduct"/>
+          <include name="verifyToDeleteAddedProduct"/>
+          <include name="verifyProductsPageIsOpenWhileClickingOnListProducts"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+        </methods>
+      </class> <!-- testClasses.ManageProductTestClass -->
+      <class name="testClasses.HomePageTestClass">
+        <methods>
+          <include name="verifySuccessfulSignOut"/>
+          <include name="afterMethod"/>
+          <include name="verifyTheTooltip_Calculator_isShowingWhileHoveringTheMouseOnCalculator"/>
+          <include name="createReport"/>
+          <include name="beforeMethod"/>
+          <include name="verifyAllTilesDisplayedOnHomePage"/>
+        </methods>
+      </class> <!-- testClasses.HomePageTestClass -->
+      <class name="testClasses.ManageUserTestClass">
+        <methods>
+          <include name="verifyTheManageUsersPageIsOpenWhileClickingOnUsers"/>
+          <include name="verifyToAdd_aNewUser"/>
+          <include name="afterMethod"/>
+          <include name="createReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testClasses.ManageUserTestClass -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <classes>
+      <class name="testClasses.LoginPageTestClass">
+        <methods>
+          <include name="verifySuccessfullLogin"/>
+          <include name="verifyResetPasswordPageComingWhileChickingOnForgotYourPassword"/>
+          <include name="verifyUnsuccessfulLoginOfTheSite"/>
+          <include name="verifyTheExactURL_OpensWhileHittingTheBaseURL"/>
+          <include name="verifyTheRememberMeCheckboxIsSelectedByDefault"/>
+          <include name="afterMethod"/>
+          <include name="createReport"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testClasses.LoginPageTestClass -->
+      <class name="testClasses.ManageProductTestClass">
+        <methods>
+          <include name="verifyToCreateA_newProduct"/>
+          <include name="verifyToDeleteAddedProduct"/>
+          <include name="verifyProductsPageIsOpenWhileClickingOnListProducts"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+        </methods>
+      </class> <!-- testClasses.ManageProductTestClass -->
+      <class name="testClasses.HomePageTestClass">
+        <methods>
+          <include name="verifySuccessfulSignOut"/>
+          <include name="afterMethod"/>
+          <include name="verifyTheTooltip_Calculator_isShowingWhileHoveringTheMouseOnCalculator"/>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+          <include name="verifyAllTilesDisplayedOnHomePage"/>
+        </methods>
+      </class> <!-- testClasses.HomePageTestClass -->
+      <class name="testClasses.ManageUserTestClass">
+        <methods>
+          <include name="verifyTheManageUsersPageIsOpenWhileClickingOnUsers"/>
+          <include name="verifyToAdd_aNewUser"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="createReport"/>
+        </methods>
+      </class> <!-- testClasses.ManageUserTestClass -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->
